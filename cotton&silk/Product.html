@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cotton & Silk - Second Wireframe</title>
+  <title>Cotton & Silk - Premium Fabrics</title>
+  <meta name="description" content="Discover premium cotton and silk products - sarees, shirts, bedsheets, and more">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="style/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <a href="#" class="navbar-brand">
+      <a href="#" class="navbar-brand" aria-label="Cotton & Silk home">
         <h2>cotton & silk</h2>
       </a>
       <!-- nav links here if needed -->
@@ -21,49 +22,72 @@
   </nav>
 
   <!-- Best Seller Section -->
-  <section class="best-seller-section">
-    <h3>Best Seller</h3>
-    <div class="best-seller-grid">
-      <a href="product-detail.html?id=101" class="card-custom">
-        <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Saree A" class="card-img-top" />
-        <div class="card-body">
-          <h5 class="card-title">Saree A</h5>
-          <p class="card-subtitle">Elegant Design</p>
+  <section class="best-seller-section" aria-labelledby="best-seller-heading">
+    <h1 id="best-seller-heading" class="pb-2">Best Seller</h1>
+    <div class="best-seller-grid" role="grid">
+      <article class="card-custom" role="gridcell">
+        <div class="card-img-container">
+          <img src="img/towel1.png" class="card-img top-img" alt="Saree A front view" loading="lazy">
+          <img src="img/towel1zoom.png" class="card-img hover-img" alt="Saree A detailed view" loading="lazy">
         </div>
-      </a>
-      <a href="product-detail.html?id=102" class="card-custom">
-        <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Saree B" class="card-img-top" />
         <div class="card-body">
-          <h5 class="card-title">Saree B</h5>
+          <h5 class="card-title">Towel1</h5>
+          <p class="card-subtitle">Silk Collection</p>
+        </div>
+      </article>
+
+      <a href="product-detail.html?id=102" class="card-custom" role="gridcell" aria-label="View Saree B details">
+        <div class="card-img-container">
+          <img src="img/saree.jpg" class="card-img top-img" alt="Saree B front view" loading="lazy">
+          <img src="img/sareeZoom.jpg" class="card-img hover-img" alt="Saree B back view" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Saree4</h5>
           <p class="card-subtitle">Traditional Style</p>
         </div>
       </a>
-      <a href="product-detail.html?id=103" class="card-custom">
-        <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Saree C" class="card-img-top" />
+
+      <a href="product-detail.html?id=103" class="card-custom" role="gridcell" aria-label="View Saree C details">
+        <div class="card-img-container">
+          <img src="img/tie1.jpg" class="card-img top-img" alt="Saree C front view" loading="lazy">
+          <img src="img/tie1zoom.jpg" class="card-img hover-img" alt="Saree C back view" loading="lazy">
+        </div>
         <div class="card-body">
-          <h5 class="card-title">Saree C</h5>
+          <h5 class="card-title">Tie2</h5>
           <p class="card-subtitle">Modern Look</p>
         </div>
       </a>
-      <a href="product-detail.html?id=104" class="card-custom">
-        <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Saree D" class="card-img-top" />
+
+      <a href="product-detail.html?id=104" class="card-custom" role="gridcell" aria-label="View Saree D details">
+        <div class="card-img-container">
+          <img src="img/tshirt1.png" class="card-img top-img" alt="Saree D front view" loading="lazy">
+          <img src="img/tshirt1zoom.webp" class="card-img hover-img" alt="Saree D back view" loading="lazy">
+        </div>
         <div class="card-body">
-          <h5 class="card-title">Saree D</h5>
+          <h5 class="card-title">T-Shirt3</h5>
           <p class="card-subtitle">Classic Style</p>
         </div>
       </a>
-      <a href="product-detail.html?id=105" class="card-custom">
-        <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Saree E" class="card-img-top" />
+
+      <a href="product-detail.html?id=105" class="card-custom" role="gridcell" aria-label="View Saree E details">
+        <div class="card-img-container">
+          <img src="img/blouse.jpg" class="card-img top-img" alt="Saree E front view" loading="lazy">
+          <img src="img/blousezoom.jpg" class="card-img hover-img" alt="Saree E back view" loading="lazy">
+        </div>
         <div class="card-body">
-          <h5 class="card-title">Saree E</h5>
+          <h5 class="card-title">Blouse1</h5>
           <p class="card-subtitle">Luxury Fabric</p>
         </div>
       </a>
-      <a href="product-detail.html?id=106" class="card-custom">
-        <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Saree F" class="card-img-top" />
+
+      <a href="product-detail.html?id=106" class="card-custom" role="gridcell" aria-label="View Saree F details">
+        <div class="card-img-container">
+          <img src="img/jean1.jpg" class="card-img top-img" alt="Saree F front view" loading="lazy">
+          <img src="img/jean1zoom.jpg" class="card-img hover-img" alt="Saree F back view" loading="lazy">
+        </div>
         <div class="card-body">
-          <h5 class="card-title">Saree F</h5>
-          <p class="card-subtitle">Beautiful Patterns</p>
+          <h5 class="card-title">Jean1</h5>
+          <p class="card-subtitle">Beautiful Pattern</p>
         </div>
       </a>
     </div>
@@ -72,100 +96,145 @@
   <!-- Sidebar and main products -->
   <main class="main-container">
     <!-- Sidebar -->
-    <div class="sidebar-list">
-      <h5 class="sidebar-header">Silk</h5>
-      <ul>
-        <li><a href="#" class="sidebar-link">Sarees</a></li>
-        <li><a href="#" class="sidebar-link">Blouses / Shirts</a></li>
-        <li><a href="#" class="sidebar-link">Pillowcases</a></li>
-        <li><a href="#" class="sidebar-link">Ties / Bowties</a></li>
-        <li><a href="#" class="sidebar-link">Pocket Squares</a></li>
-      </ul>
-      <h5 class="sidebar-header">Cotton</h5>
-      <ul>
-        <li><a href="#" class="sidebar-link">T‑Shirts</a></li>
-        <li><a href="#" class="sidebar-link">Jeans / Pants</a></li>
-        <li><a href="#" class="sidebar-link">Bedsheets</a></li>
-        <li><a href="#" class="sidebar-link">Towels</a></li>
-      </ul>
-    </div>
+    <aside class="sidebar-list" role="complementary" aria-label="Product categories">
+      <nav aria-label="Silk products">
+        <h5 class="sidebar-header">Silk</h5>
+        <ul>
+          <li><a href="#silk-sarees" class="sidebar-link">Sarees</a></li>
+          <li><a href="#silk-shirts" class="sidebar-link">Blouses / Shirts</a></li>
+          <li><a href="#silk-pillowcases" class="sidebar-link">Pillowcases</a></li>
+          <li><a href="#silk-ties" class="sidebar-link">Ties / Bowties</a></li>
+          <li><a href="#silk-squares" class="sidebar-link">Pocket Squares</a></li>
+        </ul>
+      </nav>
+      
+      <nav aria-label="Cotton products">
+        <h5 class="sidebar-header">Cotton</h5>
+        <ul>
+          <li><a href="#cotton-tshirts" class="sidebar-link">T‑Shirts</a></li>
+          <li><a href="#cotton-jeans" class="sidebar-link">Jeans / Pants</a></li>
+          <li><a href="#cotton-bedsheets" class="sidebar-link">Bedsheets</a></li>
+          <li><a href="#cotton-towels" class="sidebar-link">Towels</a></li>
+        </ul>
+      </nav>
+    </aside>
 
     <!-- Cards Grid -->
-    <section class="cards-grid">
-
+    <section class="cards-grid" role="main" aria-label="Product categories">
       <!-- Silk Section -->
-      <h4 class="section-title">Silk</h4>
-      <div class="card-group silk-group">
-        <a href="#" class="card-custom">
-          <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Sarees" class="card-img-top" />
+      <h4 class="section-title" id="silk-section">Silk</h4>
+      <div class="card-group silk-group" role="grid" aria-labelledby="silk-section">
+        <a href="product-detail.html?id=201" class="card-custom" role="gridcell" id="silk-sarees" aria-label="Browse Sarees collection">
+          <div class="card-img-container">
+            <img src="img/saree.jpg" class="card-img top-img" alt="Silk sarees collection" loading="lazy">
+            <img src="img/sareeZoom.jpg" class="card-img hover-img" alt="Silk sarees detailed view" loading="lazy">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Sarees</h5>
+            <p class="card-subtitle">Traditional Style</p>
           </div>
         </a>
-        <a href="#" class="card-custom">
-          <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Blouses / Shirts" class="card-img-top" />
+
+        <a href="product-detail.html?id=202" class="card-custom" role="gridcell" id="silk-shirts" aria-label="Browse Blouses and Shirts collection">
+          <div class="card-img-container">
+            <img src="img/shirt.webp" class="card-img top-img" alt="Silk blouses and shirts collection" loading="lazy">
+            <img src="img/blouse.webp" class="card-img hover-img" alt="Silk blouses detailed view" loading="lazy">
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Blouses / Shirts</h5>
+            <h5 class="card-title">Blouse / Shirts</h5>
+            <p class="card-subtitle">Elegant Design</p>
           </div>
         </a>
-        <a href="#" class="card-custom">
-          <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Pillowcases" class="card-img-top" />
+
+        <a href="product-detail.html?id=203" class="card-custom" role="gridcell" id="silk-pillowcases" aria-label="Browse Pillowcases collection">
+          <div class="card-img-container">
+            <img src="img/pillowcase.jpg" class="card-img top-img" alt="Silk pillowcases collection" loading="lazy">
+            <img src="img/pillowcasezoom.webp" class="card-img hover-img" alt="Silk pillowcases detailed view" loading="lazy">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Pillowcases</h5>
+            <p class="card-subtitle">Luxury Comfort</p>
           </div>
         </a>
-        <a href="#" class="card-custom">
-          <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Ties / Bowties" class="card-img-top" />
+
+        <a href="product-detail.html?id=204" class="card-custom" role="gridcell" id="silk-ties" aria-label="Browse Ties and Bowties collection">
+          <div class="card-img-container">
+            <img src="img/ties.avif" class="card-img top-img" alt="Silk ties and bowties collection" loading="lazy">
+            <img src="img/tieszoom.jpg" class="card-img hover-img" alt="Silk ties detailed view" loading="lazy">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Ties / Bowties</h5>
+            <p class="card-subtitle">Formal Elegance</p>
           </div>
         </a>
-        <a href="#" class="card-custom">
-          <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Pocket Squares" class="card-img-top" />
+
+        <a href="product-detail.html?id=205" class="card-custom" role="gridcell" id="silk-squares" aria-label="Browse Pocket Squares collection">
+          <div class="card-img-container">
+            <img src="img/pocketSquare.jpg" class="card-img top-img" alt="Silk pocket squares collection" loading="lazy">
+            <img src="img/pocketSquarezoom.jpg" class="card-img hover-img" alt="Silk pocket squares detailed view" loading="lazy">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Pocket Squares</h5>
+            <p class="card-subtitle">Refined Details</p>
           </div>
         </a>
       </div>
 
       <!-- Cotton Section -->
-      <h4 class="section-title">Cotton</h4>
-      <div class="card-group cotton-group">
-        <a href="#" class="card-custom">
-          <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="T-Shirts" class="card-img-top" />
+      <h4 class="section-title" id="cotton-section">Cotton</h4>
+      <div class="card-group cotton-group" role="grid" aria-labelledby="cotton-section">
+        <a href="product-detail.html?id=301" class="card-custom" role="gridcell" id="cotton-tshirts" aria-label="Browse T-Shirts collection">
+          <div class="card-img-container">
+            <img src="img/cottonTshirt.png" class="card-img top-img" alt="Cotton t-shirts collection" loading="lazy">
+            <img src="img/cottonTshirtzoom.webp" class="card-img hover-img" alt="Cotton t-shirts detailed view" loading="lazy">
+          </div>
           <div class="card-body">
             <h5 class="card-title">T-Shirts</h5>
+            <p class="card-subtitle">Casual Comfort</p>
           </div>
         </a>
-        <a href="#" class="card-custom">
-          <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Jeans / Pants" class="card-img-top" />
+
+        <a href="product-detail.html?id=302" class="card-custom" role="gridcell" id="cotton-jeans" aria-label="Browse Jeans and Pants collection">
+          <div class="card-img-container">
+            <img src="img/jeans.avif" class="card-img top-img" alt="Cotton jeans and pants collection" loading="lazy">
+            <img src="img/pants.webp" class="card-img hover-img" alt="Cotton jeans detailed view" loading="lazy">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Jeans / Pants</h5>
+            <p class="card-subtitle">Durable Style</p>
           </div>
         </a>
-        <a href="#" class="card-custom">
-          <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Bedsheets" class="card-img-top" />
+
+        <a href="product-detail.html?id=303" class="card-custom" role="gridcell" id="cotton-bedsheets" aria-label="Browse Bedsheets collection">
+          <div class="card-img-container">
+            <img src="img/bedsheet.jpg" class="card-img top-img" alt="Cotton bedsheets collection" loading="lazy">
+            <img src="img/bedsheetZoom.png" class="card-img hover-img" alt="Cotton bedsheets detailed view" loading="lazy">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Bedsheets</h5>
+            <p class="card-subtitle">Soft Touch</p>
           </div>
         </a>
-        <a href="#" class="card-custom">
-          <img src="https://freefrontend.dev/assets/rectangle-wide.png" alt="Towels" class="card-img-top" />
+
+        <a href="product-detail.html?id=304" class="card-custom" role="gridcell" id="cotton-towels" aria-label="Browse Towels collection">
+          <div class="card-img-container">
+            <img src="img/towel.webp" class="card-img top-img" alt="Cotton towels collection" loading="lazy">
+            <img src="img/towelzoom.jpg" class="card-img hover-img" alt="Cotton towels detailed view" loading="lazy">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Towels</h5>
+            <p class="card-subtitle">Absorbent Quality</p>
           </div>
         </a>
       </div>
     </section>
-
   </main>
 
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container text-center py-4">
       <small>&copy; 2025 Cotton & Silk. All rights reserved.</small>
     </div>
   </footer>
-
 </body>
 
 </html>

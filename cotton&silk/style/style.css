@@ -30,7 +30,7 @@ nav.navbar .navbar-brand h2 {
 .best-seller-section {
   max-width: 1200px;
   margin: 2rem auto 1rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .best-seller-section h3 {
@@ -135,7 +135,6 @@ nav.navbar .navbar-brand h2 {
   /* warm cream background for both */
 }
 
-
 .section-title {
   font-size: 1.5rem;
   margin: 3rem 0 1rem;
@@ -159,6 +158,13 @@ nav.navbar .navbar-brand h2 {
 .card-custom:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(128, 78, 34, 0.3);
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-custom:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .card-img-top {
@@ -205,6 +211,60 @@ nav.navbar .navbar-brand h2 {
   color: var(--primary);
   padding: 1.5rem 0;
   text-align: center;
+}
+
+.card-img-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-img-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.card-img-container .hover-img {
+  opacity: 0;
+}
+
+.card-img-container:hover .top-img {
+  opacity: 0;
+}
+
+.card-img-container:hover .hover-img {
+  opacity: 1;
+}
+
+.card-img-container .top-img,
+.card-img-container .hover-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+  object-fit: cover;
+}
+
+.card-img-container .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Apply hover from entire card */
+.card-custom:hover .hover-img {
+  opacity: 1;
+}
+
+.card-custom:hover .top-img {
+  opacity: 0;
 }
 
 /* Responsive */
